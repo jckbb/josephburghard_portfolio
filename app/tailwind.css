@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Codec";
+  src: url("/fonts/CodecPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Mundial";
+  src: url("/fonts/Mundial-Bold.otf");
+}
+@font-face {
+  font-family: "MundialDemibold";
+  src: url("/fonts/Mundial-Demibold.otf");
+}
+@font-face {
+  font-family: "MundialRegular";
+  src: url("/fonts/Mundial-Regular.otf");
+}
+@font-face {
+  font-family: "MundialThin";
+  src: url("/fonts/Mundial-Thin.otf");
+}
