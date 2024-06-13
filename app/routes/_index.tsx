@@ -15,14 +15,17 @@ const infomationList = [
   {
     label: "contact",
     link: "josephburghard@gmail.com",
+    type: "mail",
   },
   {
     label: "linkedin",
     link: "https://www.linkedin.com/in/joecburghard/",
+    type: "url",
   },
   {
     label: "github",
     link: "https://github.com/jckbb",
+    type: "url",
   },
 ];
 
@@ -119,7 +122,7 @@ export default function Index() {
         {infomationList.map((info, index) => (
           <div key={index} className="">
             <a
-              href={info.link}
+              href={info.type === "mail" ? `mailto:${info.link}` : info.link}
               rel="noreferrer"
               target="_blank"
               className="flex flex-col overflow-hidden gap-[0.2rem]"
