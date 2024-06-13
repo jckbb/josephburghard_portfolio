@@ -1,4 +1,4 @@
-import { useEffect, useState, useWindowDimensions } from "react";
+import { useEffect, useState } from "react";
 import type { MetaFunction } from "@remix-run/node";
 import WebsiteIcon from "../assets/websiteicon.svg";
 import iOSIcon from "../assets/iosicon.svg";
