@@ -5,8 +5,8 @@ import HeroImage from "../assets/img0001.webp";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Joseph Burghard Portfolio" },
+    { name: "description", content: "Welcome to My Portfolio!" },
   ];
 };
 
