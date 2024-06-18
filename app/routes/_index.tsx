@@ -2,6 +2,9 @@ import type { MetaFunction } from "@remix-run/node";
 import WebsiteIcon from "../assets/websiteicon.svg";
 import iOSIcon from "../assets/iosicon.svg";
 import HeroImage from "../assets/img0001.webp";
+import GithubIcon from "../assets/github-mark.svg";
+import MailIcon from "../assets/mail.svg";
+import LinkedinIcon from "../assets/linkedin.svg";
 
 export const meta: MetaFunction = () => {
   return [
@@ -112,25 +115,39 @@ export default function Index() {
   // === CONTACT ===
   const ContactSection = (
     <div className="py-[3rem] bg-[#222222] md:col-span-4 md:row-span-1 px-[5rem] justify-center flex flex-col">
-      <div className="grid grid-cols-2 gap-4">
-        {infomationList.map((info, index) => (
-          <div key={index} className="">
-            <a
-              href={info.type === "mail" ? `mailto:${info.link}` : info.link}
-              rel="noreferrer"
-              target="_blank"
-              className="flex flex-col overflow-hidden gap-[0.2rem]"
-            >
-              <span className="font-sans font-bold text-white text-[1.3rem] capitalize">
-                {info.label}
-              </span>
-
-              <span className="invisible md:visible hover:underline decoration-white font-sans text-white text-[1.3rem] text-opacity-80 truncate">
-                {info.link}
-              </span>
-            </a>
-          </div>
-        ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {infomationList.map((info, index) => {
+          const Icon =
+            info.label === "github"
+              ? GithubIcon
+              : info.label === "contact"
+              ? MailIcon
+              : LinkedinIcon;
+          return (
+            <div key={index}>
+              <a
+                href={info.type === "mail" ? `mailto:${info.link}` : info.link}
+                rel="noreferrer"
+                target="_blank"
+                className="flex flex-col overflow-hidden gap-[0.2rem]"
+              >
+                <div className="flex gap-4 md:gap-2 items-center">
+                  <img
+                    src={Icon}
+                    alt={info.label}
+                    className="h-[3rem] md:h-[1.5rem] w-[3rem] md:w-[1.5rem]"
+                  />
+                  <span className="font-sans font-bold text-white text-[2.5rem] md:text-[1.3rem] capitalize">
+                    {info.label}
+                  </span>
+                </div>
+                <span className="invisible md:visible hover:underline decoration-white font-sans text-white text-[1.3rem] text-opacity-80 truncate">
+                  {info.link}
+                </span>
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
