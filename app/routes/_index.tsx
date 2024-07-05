@@ -38,12 +38,12 @@ const projectList = [
     platform: "ios_app",
     url: "https://apps.apple.com/us/app/watchfitness/id6451427168",
   },
-  {
-    name: "Inforapenny",
-    subtitle: "Website",
-    platform: "website",
-    url: "https://inforapenny.news/",
-  },
+  // {
+  //   name: "Inforapenny",
+  //   subtitle: "Website",
+  //   platform: "website",
+  //   url: "https://inforapenny.news/",
+  // },
 ];
 
 export default function Index() {
