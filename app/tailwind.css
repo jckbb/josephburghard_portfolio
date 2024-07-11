@@ -22,3 +22,8 @@
   font-family: "MundialThin";
   src: url("/fonts/Mundial-Thin.otf");
 }
+
+html.dark {
+  --text-colour: white;
+  --background-colour: black;
+}
