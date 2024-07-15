@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="relative h-[20rem]">
       <img
         alt="asset04"
-        className="absolute -left-[5rem] -top-[10rem]"
+        className="invisible md:visible absolute -left-[5rem] -top-[10rem]"
         id="object"
         data-value="2"
         src={Asset04}
