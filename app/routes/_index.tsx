@@ -45,7 +45,7 @@ export default function Index() {
                   <br />
                   with 10 years of experience
                 </span>
-                <span className="rounded-xl px-[1rem] bg-[#F81D5F] text-[1.2rem] text-black text-opacity-90 self-start">
+                <span className="rounded-xl px-[1rem] bg-[#D9D9D9] text-[1.2rem] text-black text-opacity-90 self-start">
                   Specializing in cross-platform
                 </span>
               </div>
