@@ -35,8 +35,8 @@ export default function Index() {
     `}
     >
       <Section styling="relative flex flex-col gap-[2.5rem]">
-        <Content styling="z-10 px-[1rem] flex flex-1 w-full mt-[5rem] md:mt-0">
-          <div className="flex flex-col justify-around gap-[2.5rem]">
+        <Content styling="z-10 px-[1rem] flex flex-1 w-full">
+          <div className="flex flex-col justify-around gap-[2.5rem] pt-[5rem] pd:mt-0">
             <div className="gap-[0.5rem] flex flex-col">
               <h1 className="font-bold text-[2.2rem]">Joseph C Burghard</h1>
               <div className="gap-[1.5rem] flex flex-col border rounded-3xl border-black pl-[2rem] md:pr-[8rem] py-[1rem] self-start">
