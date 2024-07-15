@@ -9,7 +9,7 @@ interface Props {
 
 const StatementCard = ({ content, symbol, styling }: Props) => {
   return (
-    <div className={`flex flex-col ${styling}`}>
+    <div className={`min-h-[30rem] flex flex-col ${styling}`}>
       <h3 className="font-bold text-[2.2rem] text-black text-opacity-70">
         {content.title}
       </h3>

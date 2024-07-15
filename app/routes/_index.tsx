@@ -35,11 +35,11 @@ export default function Index() {
     `}
     >
       <Section styling="relative flex flex-col">
-        <Content styling="flex flex-1 w-full">
+        <Content styling="z-10 px-[1rem] flex flex-1 w-full">
           <div className="flex flex-col justify-around">
             <div className="gap-[0.5rem] flex flex-col">
               <h1 className="font-bold text-[2.2rem]">{`Hi! I'm Joseph`}</h1>
-              <div className="gap-[1.5rem] flex flex-col border rounded-3xl border-black pl-[2rem] pr-[8rem] py-[1rem] self-start">
+              <div className="gap-[1.5rem] flex flex-col border rounded-3xl border-black pl-[2rem] md:pr-[8rem] py-[1rem] self-start">
                 <span className="text-[2rem] leading-none">
                   Frontend mobile developer
                   <br />
@@ -55,15 +55,16 @@ export default function Index() {
         </Content>
         <div
           className={`
+            z-10
             relative h-[25rem]
             bg-gradient-to-b from-[#2C2B2B] to-[#252525]
           `}
         >
-          <Content styling={"flex items-center h-full"}>
+          <Content styling={"px-[1rem] flex items-center h-full"}>
             <div
-              className={`text-white text-[5rem] leading-none font-bold z-50`}
+              className={`text-white text-[4rem] md:text-[5rem] leading-none font-bold z-50`}
             >
-              <span className="text-white capitalize">
+              <span className="text-white capitalize drop-shadow-md">
                 crafting
                 <br />
                 seamless
@@ -73,21 +74,21 @@ export default function Index() {
                 experiences.
               </span>
             </div>
-            <div className="absolute right-0 bottom-0 transform -translate-x-2/3">
+            <div className="z-10 absolute right-0 bottom-0 transform md:-translate-x-2/3">
               <img alt="me" src={MeImg} width={440} />
             </div>
             <img
               alt="asset04"
               id="object"
               data-value="-2"
-              className="absolute left-[35rem] top-[0rem] transform"
+              className="invisible md:visible absolute left-[35rem] top-[0rem] transform"
               src={Asset04}
               width={280}
             />
           </Content>
         </div>
         <img
-          className="absolute top-1/4 -left-[8rem] transform"
+          className="z-0 invisible md:visible absolute top-1/4 -left-[8rem] transform"
           src={Asset03}
           height={300}
           width={300}
@@ -96,7 +97,7 @@ export default function Index() {
           alt="loop"
         />
         <img
-          className="absolute -top-[8.5rem] right-[10rem] transform"
+          className="z-0 absolute md:-top-[8.5rem] -top-[10rem] -right-[8rem] md:right-[10rem] transform"
           src={Asset02}
           height={300}
           width={300}
@@ -105,7 +106,7 @@ export default function Index() {
           alt="spikey"
         />
         <img
-          className="absolute bottom-[25rem] -right-[0rem] transform"
+          className="z-0 invisible md:visible absolute bottom-[25rem] -right-[0rem] transform"
           src={Asset01}
           height={300}
           width={300}
@@ -114,9 +115,9 @@ export default function Index() {
           alt="cube"
         />
       </Section>
-      <Section styling="relative flex flex-col justify-center">
-        <Content styling="flex flex-col justify-center">
-          <div className="grid grid-cols-3 gap-[1rem] h-[35rem]">
+      <Section styling="relative flex flex-col py-[5rem] md:justify-center h-auto">
+        <Content styling="px-[1rem] flex flex-col justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[1rem] md:h-[35rem]">
             <StatementCard
               styling="col-span-1"
               symbol={
@@ -155,7 +156,7 @@ export default function Index() {
           </div>
         </Content>
         <img
-          className="absolute -bottom-[6rem] -right-[6rem] transform"
+          className="invisible md:visible absolute -bottom-[6rem] -right-[6rem] transform"
           src={Asset03}
           height={300}
           width={300}
@@ -170,17 +171,17 @@ export default function Index() {
           flex flex-col justify-center
         `}
       >
-        <Content styling="w-full">
-          <div className="grid grid-cols-2 divide-x divide-[#ffffffCC]">
-            <div className="flex flex-1 flex-col justify-center items-start">
-              <div className="flex gap-[4rem]">
-                <span className="font-bold text-white text-[2rem] text-opacity-80">
+        <Content styling="w-full px-[1rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-[#ffffffCC] gap-[4rem]">
+            <div className="flex flex-1 flex-col items-center justify-center md:items-start">
+              <div className="flex gap-[1rem] md:gap-[4rem]">
+                <span className="font-bold text-white text-[1.5rem] md:text-[2rem] text-opacity-80">
                   Checkout some of my
                   <br />
                   recent Projects
                 </span>
                 <img
-                  className="opacity-80"
+                  className="rotate-90 md:rotate-0 opacity-80 w-[2rem] md:w-[3rem]"
                   src={RightArrowIcon}
                   alt="rightarrow"
                 />
