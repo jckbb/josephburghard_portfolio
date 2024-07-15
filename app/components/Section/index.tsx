@@ -7,7 +7,7 @@ interface Props {
 
 const Section = ({ children, styling }: Props) => {
   return (
-    <div className={`h-screen ${styling}`}>
+    <div className={`min-h-screen md:h-screen ${styling}`}>
       {React.Children.map(children, (child) => child)}
     </div>
   );
