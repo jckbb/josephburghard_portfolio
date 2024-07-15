@@ -18,8 +18,8 @@ import StatementCard from "~/components/StatementCard";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Joseph Burghard Portfolio" },
-    { name: "description", content: "Welcome to My Portfolio!" },
+    { title: "Joseph C Burghard Portfolio" },
+    { name: "Portfolio", content: "Welcome to My Portfolio!" },
   ];
 };
 
@@ -34,11 +34,11 @@ export default function Index() {
       overflow-hidden
     `}
     >
-      <Section styling="relative flex flex-col">
+      <Section styling="relative flex flex-col gap-[2rem]">
         <Content styling="z-10 px-[1rem] flex flex-1 w-full">
-          <div className="flex flex-col justify-around">
+          <div className="flex flex-col justify-around gap-[1.5rem]">
             <div className="gap-[0.5rem] flex flex-col">
-              <h1 className="font-bold text-[2.2rem]">{`Hi! I'm Joseph`}</h1>
+              <h1 className="font-bold text-[2.2rem]">Joseph C Burghard</h1>
               <div className="gap-[1.5rem] flex flex-col border rounded-3xl border-black pl-[2rem] md:pr-[8rem] py-[1rem] self-start">
                 <span className="text-[2rem] leading-none">
                   Frontend mobile developer
