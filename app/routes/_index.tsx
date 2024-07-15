@@ -1,6 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Theme, useTheme } from "~/utils/themeProvider";
-import { useLightTheme } from "~/utils/useLightTheme";
 import Asset01 from "~/assets/asset01.svg";
 import Asset02 from "../assets/asset02.svg";
 import Asset03 from "../assets/asset03.svg";
@@ -10,12 +8,12 @@ import SpikesIcon from "../assets/spikes.svg";
 import InforapennyLogo from "../assets/inforapenny.svg";
 import RightArrowIcon from "../assets/rightarrow.svg";
 import WatchfitnessLogo from "../assets/watchfitness.svg";
-import MeImg from "../assets/me.svg";
+import MeImg from "../assets/me.png";
 import Footer from "~/components/Footer";
 import Section from "~/components/Section";
 import ProfessionalLinksBar from "~/components/ProfessionalLinksBar";
 import Content from "~/components/Content";
-import { useEffect } from "react";
+import { useAnimateObjects } from "~/utils/useAnimateObjects";
 
 export const meta: MetaFunction = () => {
   return [
@@ -25,19 +23,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  const [, setTheme] = useTheme();
-  const isLight = useLightTheme();
-
-  useEffect(() => {
-    document.addEventListener("mousemove", (e) => {
-      document.querySelectorAll("#object").forEach((move) => {
-        const movingValue = move.getAttribute("data-value");
-        const x = (e.clientX * movingValue) / 250;
-        const y = (e.clientY * movingValue) / 250;
-        move.style.transform = `translateX(${x}px) translateY(${y}px)`;
-      });
-    });
-  }, []);
+  useAnimateObjects();
 
   return (
     <main
