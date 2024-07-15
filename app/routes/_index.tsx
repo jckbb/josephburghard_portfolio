@@ -115,7 +115,7 @@ export default function Index() {
           alt="cube"
         />
       </Section>
-      <Section styling="relative flex flex-col py-[5rem] md:justify-center h-auto">
+      <Section styling="relative flex flex-col py-[5rem] md:justify-center h-fit md:h-screen">
         <Content styling="px-[1rem] flex flex-col justify-center">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[1rem] md:h-[35rem]">
             <StatementCard
