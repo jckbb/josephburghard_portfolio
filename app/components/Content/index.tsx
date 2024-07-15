@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
   children: JSX.Element | JSX.Element[];
-  styling?: string;
+  styling?: HTMLElement["className"];
 }
 
 const Content = ({ children, styling }: Props) => {
