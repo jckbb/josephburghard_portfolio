@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 
 export default {
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     fontFamily: {
       codec: ["Codec"],
@@ -10,13 +11,7 @@ export default {
       mundialregular: ["MundialRegular"],
       mundialthin: ["MundialThin"],
     },
-    extend: {
-      rotate: {
-        "17": "17deg",
-        "32": "32deg",
-        "56": "56deg",
-      },
-    },
+    extend: {},
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
