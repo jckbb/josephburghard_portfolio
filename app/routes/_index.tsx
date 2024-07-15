@@ -14,6 +14,7 @@ import Section from "~/components/Section";
 import ProfessionalLinksBar from "~/components/ProfessionalLinksBar";
 import Content from "~/components/Content";
 import { useAnimateObjects } from "~/utils/useAnimateObjects";
+import StatementCard from "~/components/StatementCard";
 
 export const meta: MetaFunction = () => {
   return [
@@ -44,7 +45,7 @@ export default function Index() {
                   <br />
                   with 10 years of experience
                 </span>
-                <span className="text-[1.2rem] font-light">
+                <span className="rounded-xl px-[1rem] bg-[#F81D5F] text-[1.2rem] text-black text-opacity-90 self-start">
                   Specializing in cross-platform
                 </span>
               </div>
@@ -114,53 +115,43 @@ export default function Index() {
         />
       </Section>
       <Section styling="relative flex flex-col justify-center">
-        <Content styling="flex flex-col justify-center h-[30rem]">
-          <div className="grid grid-cols-3 gap-[1rem]">
-            <div className="flex flex-col col-span-1">
-              <h3 className="font-bold text-[2.2rem] text-black text-opacity-70">
-                Experience
-              </h3>
-              <div className="gap-[1.5rem] flex flex-auto flex-col border rounded-3xl border-black p-[1rem] py-[1rem] self-start">
-                <div className="flex-1 flex justify-center items-center">
-                  <img src={StarIcon} height={200} width={200} alt="star" />
-                </div>
-                <p className="flex-1 text-[1.4rem]">
-                  Specializing in React Native with Expo and TypeScript, and I'm
+        <Content styling="flex flex-col justify-center">
+          <div className="grid grid-cols-3 gap-[1rem] h-[35rem]">
+            <StatementCard
+              styling="col-span-1"
+              symbol={
+                <img src={StarIcon} height={200} width={200} alt="star" />
+              }
+              content={{
+                title: "Experience",
+                description: `Specializing in React Native with Expo and TypeScript, and I'm
                   proficient in Kotlin, Swift, web development, and backend
-                  development with Go.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col col-span-1">
-              <h3 className="font-bold text-[2.2rem] text-black text-opacity-70">
-                Passion
-              </h3>
-              <div className="gap-[1.5rem] flex flex-auto flex-col border rounded-3xl border-black p-[1rem] py-[1rem] self-start">
-                <div className="flex-1 flex justify-center items-center">
-                  <img src={SpikesIcon} height={200} width={200} alt="spikey" />
-                </div>
-                <p className="flex-1 text-[1.4rem]">
-                  Passionate about cross-platform development, reveling in the
+                  development with Go.`,
+              }}
+            />
+            <StatementCard
+              styling="col-span-1"
+              symbol={
+                <img src={SpikesIcon} height={200} width={200} alt="spikey" />
+              }
+              content={{
+                title: "Passion",
+                description: ` Passionate about cross-platform development, reveling in the
                   building process and thriving on the opportunity to share
-                  knowledge and learn from others.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col col-span-1">
-              <h3 className="font-bold text-[2.2rem] text-black text-opacity-70">
-                Soft skills
-              </h3>
-              <div className="gap-[1.5rem] flex flex-auto flex-col border rounded-3xl border-black px-[1rem] py-[1rem] self-start">
-                <div className="flex flex-1 justify-center items-center">
-                  <div className="h-[10rem] w-[10rem] rounded-full bg-[#231F20]" />
-                </div>
-                <p className="flex-1 text-[1.4rem]">
-                  Expert in collaborative problem-solving and teamwork,
-                  fostering a cooperative and innovative development
-                  environment.
-                </p>
-              </div>
-            </div>
+                  knowledge and learn from others.`,
+              }}
+            />
+            <StatementCard
+              styling="col-span-1"
+              symbol={
+                <div className="h-[10rem] w-[10rem] rounded-full bg-[#231F20]" />
+              }
+              content={{
+                title: "Soft skills",
+                description: `Expert in collaborative problem-solving and teamwork, fostering a
+              cooperative and innovative development environment.`,
+              }}
+            />
           </div>
         </Content>
         <img
