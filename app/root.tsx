@@ -29,7 +29,7 @@ const App = () => {
         <Meta />
         <Links />
       </head>
-      <body className="md:fixed">
+      <body>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
