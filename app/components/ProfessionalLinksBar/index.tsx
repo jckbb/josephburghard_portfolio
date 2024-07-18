@@ -9,7 +9,7 @@ const ProfessionalLinksBar = () => {
       <a
         className="relative group"
         href="public/Joseph_Burghard_Resume.pdf"
-        download
+        download="Joseph_Burghard_Resume.pdf"
       >
         <span className="invisible group-hover:visible absolute -top-[2rem] left-1/2 transform -translate-x-1/2">
           Resume
