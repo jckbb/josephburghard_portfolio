@@ -12,7 +12,7 @@ const ProfessionalLinksBar = () => {
     <div className="flex border rounded-full border-black h-[3rem] items-center justify-evenly">
       <a
         className="relative group"
-        href="app/Joseph_C_Burghard_Resume.pdf"
+        href="app/Joseph_Burghard_Resume.pdf"
         download
       >
         <span className="invisible group-hover:visible absolute -top-[2rem] left-1/2 transform -translate-x-1/2">
