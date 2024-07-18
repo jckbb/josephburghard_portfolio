@@ -7,9 +7,10 @@ const ProfessionalLinksBar = () => {
   return (
     <div className="flex border rounded-full border-black h-[3rem] items-center justify-evenly">
       <a
+        target="_blank"
+        rel="noreferrer"
         className="relative group"
-        href="public/Joseph_Burghard_Resume.pdf"
-        download="Joseph_Burghard_Resume.pdf"
+        href="/Joseph_Burghard_Resume.pdf"
       >
         <span className="invisible group-hover:visible absolute -top-[2rem] left-1/2 transform -translate-x-1/2">
           Resume
