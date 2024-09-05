@@ -5,7 +5,7 @@ import Asset03 from "../assets/asset03.svg";
 import Asset04 from "../assets/asset04.svg";
 import StarIcon from "../assets/star.svg";
 import SpikesIcon from "../assets/spikes.svg";
-import InforapennyLogo from "../assets/inforapenny.svg";
+import AIQLogo from "../assets/aiqlogo.png";
 import RightArrowIcon from "../assets/rightarrow.svg";
 import WatchfitnessLogo from "../assets/watchfitness.svg";
 import MeImg from "../assets/me.png";
@@ -207,16 +207,19 @@ export default function Index() {
               </li>
               <li>
                 <a
-                  href={"https://inforapenny.news"}
+                  href={
+                    "https://apps.apple.com/us/app/aiq-learn-anything/id6639585768"
+                  }
                   target="_blank"
                   rel="noreferrer"
+                  className="flex flex-col items-center opacity-60 hover:opacity-100"
                 >
                   <img
-                    className="opacity-60 hover:opacity-100"
-                    src={InforapennyLogo}
+                    className="rounded-full"
+                    src={AIQLogo}
                     height={300}
                     width={300}
-                    alt="inforapenny"
+                    alt="aiq"
                   />
                 </a>
               </li>
