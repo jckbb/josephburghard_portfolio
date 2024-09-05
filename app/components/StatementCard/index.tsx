@@ -10,7 +10,7 @@ interface Props {
 const StatementCard = ({ content, symbol, styling }: Props) => {
   return (
     <div
-      className={`transform hover:-translate-y-10 transition duration-500 ease-in-out min-h-[30rem] flex flex-col ${styling}`}
+      className={`transform md:hover:-translate-y-10 duration-500 ease-in-out min-h-[30rem] flex flex-col ${styling}`}
     >
       <h3 className="font-bold text-[2.2rem] text-black text-opacity-70">
         {content.title}
